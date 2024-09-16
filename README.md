@@ -65,14 +65,6 @@ Contributions are welcome! To get started:
 
 ---
 
-## 🖼 Screenshots
-
-| Light Mode                            | Dark Mode                             |
-|---------------------------------------|---------------------------------------|
-| ![Light Mode](https://via.placeholder.com/400x300) | ![Dark Mode](https://via.placeholder.com/400x300) |
-
----
-
 ## 🛡 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
