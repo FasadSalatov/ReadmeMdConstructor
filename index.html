@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="toolbar">
+        <div>
+            <button id="saveButton">Save</button>
+            <button id="loadButton">Load</button>
+            <button id="downloadButton">Download</button>
+            <button id="exportHTMLButton">Export HTML</button>
+        </div>
+        <div class="dropdown">
+            <button>Markdown Constructor</button>
+            <div class="dropdown-content" id="markdownConstructor">
+                <button data-markdown="# Heading 1">Heading 1</button>
+                <button data-markdown="## Heading 2">Heading 2</button>
+                <button data-markdown="### Heading 3">Heading 3</button>
+                <button data-markdown="**Bold Text**">Bold</button>
+                <button data-markdown="_Italic Text_">Italic</button>
+                <button data-markdown="`Inline Code`">Inline Code</button>
+                <button data-markdown="```\nCode Block\n```">Code Block</button>
+                <button data-markdown="- List Item">Unordered List</button>
+                <button data-markdown="1. Numbered List">Ordered List</button>
+                <button data-markdown="> Blockquote">Blockquote</button>
+                <button data-markdown="---">Horizontal Rule</button>
+                <button data-markdown="![Alt Text](https://example.com/image.jpg)">Image</button>
+                <button data-markdown="[Link Text](https://example.com)">Link</button>
+                <button data-markdown="1. [ ] Task Item">Task Item</button>
+                <button data-markdown="| Header | Header |\n| ------ | ------ |\n| Cell   | Cell   |">Table</button>
+                <button data-markdown="[^1]: Footnote text">Footnote</button>
+            </div>
+        </div>
+        <div>
+            <button id="themeToggleButton">Toggle Dark Mode</button>
+            <button id="fullscreenButton">Full Screen</button>
+            <button id="clearButton">Clear All</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <textarea id="editor" placeholder="Write your README.md content here..."></textarea>
+        <div class="preview" id="preview"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
